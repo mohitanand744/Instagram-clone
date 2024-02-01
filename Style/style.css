@@ -370,7 +370,7 @@ main {
   }
 }
 
-@media screen and (width <= 455px) {
+@media screen and (width <= 550px) {
   aside {
     display: none;
   }
