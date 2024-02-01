@@ -30,6 +30,9 @@ aside {
     width: 100%;
   }
 }
+.responsive-logo {
+  display: none;
+}
 .icons-container {
   display: flex;
   flex-direction: column;
@@ -68,21 +71,17 @@ aside {
 
 main {
   position: absolute;
-  width: calc(100% - 250px);
-  min-height: 100vh;
   top: 0;
-  left: 250px;
   background-color: #fff;
-  display: flex;
-  justify-content: space-evenly;
 }
 .main-container {
   max-width: calc(100% - 250px);
   position: absolute;
+  min-height: 100vh;
   left: 250px;
+  top: 0;
   margin: 0 auto;
   display: flex;
-  justify-content: space-evenly;
 }
 .story-container {
   max-width: 630px;
@@ -124,8 +123,8 @@ main {
 }
 
 .suggested-profiles-container {
-  margin-right: 13rem;
-  margin-left: 13rem;
+  margin-right: 20rem;
+  margin-left: 10rem;
   margin-top: 3rem;
 }
 .img-container {
@@ -330,3 +329,126 @@ main {
   }
 }
 /***** End Section main *****/
+
+/***** Responsiveness *****/
+
+@media screen and (width <= 1280px) {
+  .icon-txt a {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .responsive-logo {
+    height: 40px;
+    width: 40px;
+    display: block;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    overflow: hidden;
+  }
+  aside {
+    width: 100px;
+    height: 100vh;
+  }
+  main {
+    width: calc(100% - 100px);
+  }
+}
+
+@media screen and (width <= 1100px) {
+  .suggested-profiles-container {
+    display: none;
+  }
+}
+@media screen and (width <= 768px) {
+  .main-container {
+    margin-left: -13rem;
+  }
+}
+
+@media screen and (width <= 455px) {
+  aside {
+    display: none;
+  }
+  .main-container {
+    width: 100%;
+    margin-left: -25.5rem;
+  }
+  .story-image-container {
+    width: 150px;
+    height: 150px;
+  }
+  .story-container {
+    overflow-x: scroll;
+    margin-left: 2rem;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .storys {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+  }
+  .post-container {
+    max-width: 100%;
+    border: none;
+
+    & .top-container {
+      width: 100%;
+      padding: 15px;
+
+      & .text-container {
+        font-size: 2rem;
+      }
+      & .txt {
+        font-size: 2rem;
+      }
+      & .img-container {
+        width: 70px;
+        height: 70px;
+      }
+    }
+    & .post-img-container {
+      width: 100%;
+    }
+  }
+  .like-comments-share-save-container {
+    padding: 15px;
+    font-size: 4.6rem;
+  }
+  .likes-counting {
+    margin-top: -2.6rem;
+    gap: 2rem;
+    padding: 15px;
+    font-size: 2.4rem;
+
+    & .img-container {
+      & img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  .post-des {
+    font-size: 2rem;
+    padding: 15px;
+  }
+  .comments {
+    padding: 15px;
+    & input {
+      height: 30px;
+      width: 100%;
+    }
+    & input::placeholder {
+      font-size: 2.4rem;
+    }
+  }
+}
+/***** End Responsiveness *****/
