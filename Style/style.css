@@ -506,10 +506,9 @@ main {
     align-items: center;
   }
   .post-container {
-    max-width: 70%;
-    margin-left: -1rem;
+    width: 100%;
     border: none;
-    padding: 0 1rem;
+    margin: 1rem 0;
 
     & .top-container {
       width: 100%;
