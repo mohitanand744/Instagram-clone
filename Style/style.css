@@ -448,24 +448,24 @@ main {
     display: none;
   }
   .main-container {
-    width: 100%;
+    max-width: 100%;
     margin-left: -25.5rem;
   }
   .story-image-container {
-    width: 150px;
-    height: 150px;
+    width: 80px;
+    height: 80px;
   }
   .story {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
   .story-image {
     display: block;
-    width: 147px;
-    height: 147px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 0.6rem;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -486,16 +486,14 @@ main {
 
     & i {
       position: absolute;
-      z-index: 999999999999;
-      bottom: 10px;
-      right: 19px;
-      width: 27px;
-      height: 27px;
+      bottom: 21px;
+      right: 5px;
     }
   }
   .story-container {
     overflow-x: scroll;
     margin-left: 2rem;
+    font-size: 1.3rem;
     font-weight: bold;
   }
   ::-webkit-scrollbar {
@@ -506,25 +504,26 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem;
   }
   .post-container {
-    max-width: 100%;
+    max-width: 70%;
+    margin-left: -1rem;
     border: none;
+    padding: 0 1rem;
 
     & .top-container {
       width: 100%;
-      padding: 15px;
+      padding: 0 15px;
 
       & .text-container {
-        font-size: 2rem;
+        font-size: 1.3rem;
       }
-      & .txt {
-        font-size: 2rem;
+      & .txt a {
+        font-size: 3rem;
       }
       & .img-container {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
       }
     }
     & .post-img-container {
@@ -533,24 +532,25 @@ main {
   }
   .like-comments-share-save-container {
     padding: 15px;
-    font-size: 4.6rem;
+    font-size: 3rem;
   }
   .likes-counting {
-    margin-top: -2.6rem;
+    margin-top: -2.8rem;
     gap: 2rem;
     padding: 15px;
-    font-size: 2.4rem;
+    font-size: 1.6rem;
 
     & .img-container {
+      margin-right: -11px;
       & img {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
       }
     }
   }
   .post-des {
-    font-size: 2rem;
-    padding: 15px;
+    font-size: 1.6rem;
+    padding: 0 15px;
   }
   .comments {
     padding: 15px;
@@ -559,7 +559,7 @@ main {
       width: 100%;
     }
     & input::placeholder {
-      font-size: 2.4rem;
+      font-size: 1.6rem;
     }
   }
 
@@ -577,13 +577,13 @@ main {
       background-color: #fff;
 
       & .icon-txt i {
-        font-size: 3.9rem;
+        font-size: 3rem;
       }
 
       & .images {
         & img {
-          width: 60px;
-          height: 60px;
+          width: 45px;
+          height: 45px;
           border-radius: 50%;
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
