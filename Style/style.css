@@ -120,7 +120,7 @@ main {
   background-color: #fff;
 }
 .main-container {
-  width: calc(100% - 250px);
+  max-width: calc(100% - 250px);
   position: absolute;
   min-height: 100vh;
   left: 250px;
@@ -129,7 +129,7 @@ main {
   display: flex;
 }
 .story-container {
-  width: 680px;
+  max-width: 680px;
   margin: 2rem auto auto auto;
   display: flex;
   gap: 1.6rem;
@@ -285,7 +285,7 @@ main {
 }
 
 .post-container {
-  width: 70%;
+  max-width: 70%;
   margin: 3rem auto auto auto;
 
   & .top-container {
@@ -433,7 +433,7 @@ main {
     height: 100vh;
   }
   main {
-    width: calc(100% - 100px);
+    width: 100%;
   }
 }
 
@@ -453,7 +453,7 @@ main {
     display: none;
   }
   .main-container {
-    width: 100%;
+    max-width: 100%;
     margin-left: -25.5rem;
   }
   .story-image-container {
@@ -500,7 +500,7 @@ main {
     margin-left: 2rem;
     font-size: 1.3rem;
     font-weight: bold;
-    width: 100%;
+    max-width: 100%;
   }
   ::-webkit-scrollbar {
     display: none;
@@ -512,7 +512,7 @@ main {
     align-items: center;
   }
   .post-container {
-    width: 100%;
+    max-width: 100%;
     border: none;
     margin: 1rem 0;
 
@@ -556,9 +556,6 @@ main {
   .post-des {
     font-size: 1.6rem;
     padding: 0 15px;
-  }
-  .storys-posts-container{
-    width: 130%;
   }
   .comments {
     padding: 15px;
