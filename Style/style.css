@@ -450,13 +450,13 @@ main {
 
 @media screen and (width <= 550px) {
   main {
-    width: 100%;
+    width: 100vw;
   }
   aside {
     display: none;
   }
   .main-container {
-    max-width: 100%;
+    max-width: 100vw;
     margin-left: -25.5rem;
   }
   .story-image-container {
@@ -500,8 +500,8 @@ main {
   }
   .story-container {
     overflow-x: scroll;
-    margin-left: 2rem;
     font-size: 1.3rem;
+    padding-left: 2rem;
     font-weight: bold;
     max-width: 100vw;
   }
@@ -515,12 +515,11 @@ main {
     align-items: center;
   }
   .post-container {
-    max-width: 100%;
+    max-width: 100vw;
     border: none;
-    margin: 1rem 0;
 
     & .top-container {
-      width: 100%;
+      width: 100vw;
       padding: 0 15px;
 
       & .text-container {
@@ -535,7 +534,11 @@ main {
       }
     }
     & .post-img-container {
-      width: 100%;
+      width: 100vw;
+
+      & img {
+        width: 101vw;
+      }
     }
   }
   .like-comments-share-save-container {
