@@ -120,7 +120,7 @@ main {
   background-color: #fff;
 }
 .main-container {
-  max-width: calc(100% - 250px);
+  width: calc(100% - 250px);
   position: absolute;
   min-height: 100vh;
   left: 250px;
@@ -129,10 +129,15 @@ main {
   display: flex;
 }
 .story-container {
-  max-width: 630px;
+  width: 680px;
   margin: 2rem auto auto auto;
   display: flex;
   gap: 1.6rem;
+  overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 .story-image {
   display: none;
@@ -280,11 +285,11 @@ main {
 }
 
 .post-container {
-  max-width: 500px;
+  width: 70%;
   margin: 3rem auto auto auto;
 
   & .top-container {
-    width: 500px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -336,7 +341,7 @@ main {
   }
 }
 .post-img-container {
-  width: 500px;
+  width: 100%;
   height: auto;
 
   & img {
@@ -448,7 +453,7 @@ main {
     display: none;
   }
   .main-container {
-    max-width: 100%;
+    width: 100%;
     margin-left: -25.5rem;
   }
   .story-image-container {
@@ -495,7 +500,7 @@ main {
     margin-left: 2rem;
     font-size: 1.3rem;
     font-weight: bold;
-    max-width:480px ;
+    width: 100%;
   }
   ::-webkit-scrollbar {
     display: none;
@@ -507,7 +512,7 @@ main {
     align-items: center;
   }
   .post-container {
-    max-width: 100%;
+    width: 100%;
     border: none;
     margin: 1rem 0;
 
@@ -551,6 +556,9 @@ main {
   .post-des {
     font-size: 1.6rem;
     padding: 0 15px;
+  }
+  .storys-posts-container{
+    width: 130%;
   }
   .comments {
     padding: 15px;
